@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nergy Vidya</title>
+    <title>G-TEC Nergy Vidya</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png" />
@@ -13,46 +13,12 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" href="./main.css" />
 
 
-    <script>
-        !(function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod
-                    ? n.callMethod.apply(n, arguments)
-                    : n.queue.push(arguments);
-            };
 
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = "2.0";
 
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
 
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
 
-            s.parentNode.insertBefore(t, s);
-        })(
-            window,
-            document,
-            "script",
-
-            "https://connect.facebook.net/en_US/fbevents.js"
-        );
-
-        fbq("init", "339404635200859");
-
-        fbq("track", "PageView");
-    </script>
-
-    <noscript><img height="1" width="1" style="display: none"
-            src="https://www.facebook.com/tr?id=339404635200859&ev=PageView&noscript=1" /></noscript>
     <style>
         @import "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap";
 
@@ -267,99 +233,8 @@
             z-index: 9;
         }
 
-        .form-control {
-            margin-bottom: 24px;
-        }
 
-        .form-control .form-input {
-            width: 100%;
-            height: 56px;
-            padding: 16px;
-            border: solid 1px gray;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.5px;
-            color: #fcc73b;
-            font-family: "DM Sans", sans-serif;
-            outline: 0;
-            border-radius: 4px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            transition: all 0.3s ease;
-        }
 
-        .form-control .form-input:focus {
-            border-color: #48a2da;
-        }
-
-        .form-control .form-textarea {
-            width: 100%;
-            height: 160px;
-            padding: 12px 16px;
-            border: solid 1px #e1edf5;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.5px;
-            color: #fcc73b;
-            font-family: "DM Sans", sans-serif;
-            outline: 0;
-            resize: none;
-            font-family: "DM Sans", sans-serif;
-            border-radius: 4px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .form-control .form-textarea:focus {
-            border-color: #48a2da;
-        }
-
-        .form-control.invalid input,
-        .form-control.invalid input:focus {
-            border-color: #e68686;
-            color: #e68686;
-        }
-
-        .form-control.invalid .errorText {
-            font-size: 14px;
-            color: #e68686;
-            margin: 5px 0;
-        }
-
-        .submitBtn {
-            height: 56px;
-            width: 300px;
-            background: #2660ac;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 24px;
-            letter-spacing: 0.5px;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            font-family: "DM Sans", sans-serif;
-            border-radius: 4px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .submitBtn:hover {
-            background: #fcc73b;
-        }
-
-        @media (max-width: 768px) {
-            .submitBtn {
-                width: 150px;
-                height: 48px;
-            }
-        }
 
         .primaryBtn {
             height: 41px;
@@ -501,51 +376,56 @@
             }
         }
 
-        header nav {
+        /* Keep the styles for the mobile menu button */
+        header .mobileMenu {
             display: flex;
             align-items: center;
+            justify-content: center;
+            height: 46px;
+            width: 32px;
+            /* Adjust width as needed */
+            padding: 0;
+            border: 0;
+            background: rgba(0, 0, 0, 0);
+            cursor: pointer;
+            flex-direction: column;
+            gap: 4px;
         }
 
-        header nav ul {
+        /* Styles for the menu icon spans */
+        header .mobileMenu span {
+            height: 4px;
+            width: 100%;
+            background: #2660ac;
+            display: block;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        /* Adjust transforms for menu icon animation */
+        header .mobileMenu span:first-child {
+            transform-origin: 13% 150%;
+        }
+
+        header .mobileMenu span:last-child {
+            transform-origin: 22% 0;
+        }
+
+        /* Adjust styles for the navigation menu */
+        nav ul {
             display: flex;
             align-items: center;
             list-style: none;
+            /* Remove bullet points */
             margin: 0;
             padding: 0;
             gap: 33px;
             font-size: 16px;
         }
 
-        @media (max-width: 1023px) {
-            header nav ul {
-                height: 0;
-                overflow: hidden;
-                padding: 0 16px 0 16px;
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 60px;
-                width: 100%;
-                background: #fff;
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-                align-items: flex-start;
-                opacity: 0;
-                transition: all 0.3s ease;
-                box-shadow: 5px 1px 10px rgba(252, 199, 59, 0.1);
-            }
-
-            header nav ul li {
-                display: block;
-                width: 100%;
-            }
-
-            header nav ul li a {
-                display: block;
-            }
-        }
-
+        /* Styles for navigation links */
         header nav a {
             text-decoration: none;
             color: #48a2da;
@@ -553,76 +433,16 @@
             letter-spacing: 0.5px;
         }
 
+        /* Styles for navigation links on hover */
         header nav a:hover {
             color: #2660ac;
             cursor: pointer;
         }
 
+        /* Styles for active navigation link */
         header nav .active a {
             font-weight: 700;
             color: #2660ac;
-        }
-
-        @media (max-width: 1023px) {
-            header nav.active ul {
-                top: 65px;
-                height: auto;
-                padding: 15px 16px 15px 16px;
-                opacity: 1;
-                transform: translateY(10px);
-            }
-        }
-
-        header nav.active button span:first-child {
-            transform: rotate(45deg);
-        }
-
-        header nav.active button span:nth-child(2) {
-            opacity: 0;
-        }
-
-        header nav.active button span:last-child {
-            transform: rotate(-45deg);
-        }
-
-        header .mobileMenu {
-            display: none;
-        }
-
-        @media (max-width: 1023px) {
-            header .mobileMenu {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 46px;
-                width: 100%;
-                width: 32px;
-                padding: 0;
-                border: 0;
-                background: rgba(0, 0, 0, 0);
-                cursor: pointer;
-                flex-direction: column;
-                gap: 4px;
-            }
-
-            header .mobileMenu span {
-                height: 4px;
-                width: 100%;
-                background: #2660ac;
-                display: block;
-                border-radius: 4px;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                transition: all 0.3s ease;
-            }
-
-            header .mobileMenu span:first-child {
-                transform-origin: 13% 150%;
-            }
-
-            header .mobileMenu span:last-child {
-                transform-origin: 22% 0;
-            }
         }
 
         header .login-button {
@@ -710,6 +530,9 @@
             color: #2660ac;
             font-family: "DM Sans", sans-serif;
             margin: 0 0 15px 0;
+            margin: 0;
+            text-align: left;
+            letter-spacing: 0px;
         }
 
         .banner .container .bannerText h1 span {
@@ -726,7 +549,8 @@
         }
 
         .banner .container .bannerText p {
-            max-width: 445px;
+            max-width: 100%;
+
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -734,6 +558,7 @@
             letter-spacing: 0.5px;
             color: #5e6062;
             margin-bottom: 24px;
+            text-align: center;
         }
 
         @media (min-width: 769px) {
@@ -1305,6 +1130,50 @@
                 display: none;
             }
         }
+
+        .bannerText {
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .primaryBtn {
+            height: 41px;
+            padding: 8px 24px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: .5px;
+            color: #fff;
+            font-family: "DM Sans", sans-serif;
+            background: #039a38;
+            text-decoration: none;
+            display: flex;
+            /* Changed from inline-flex to flex */
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            transition: all .3s ease;
+            margin: auto;
+            padding: 8px 16px;
+            width: 120px
+                /* Added margin:auto for horizontal centering */
+        }
+
+        .purchase {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: #f12916;
+            letter-spacing: 0.5px;
+            max-width: 625px;
+            text-align: center;
+            margin: 0 auto 30px auto;
+        }
     </style>
 
     <!-- End Meta Pixel Code -->
@@ -1324,9 +1193,7 @@
                 </a>
             </h1>
             <nav>
-                <button class="mobileMenu">
-                    <span></span><span></span><span></span>
-                </button>
+
                 <ul>
                     <li class="active">
                         <a href="index.html">Home</a>
@@ -1354,18 +1221,38 @@
         </div>
     </header>
     <section class="banner animateNergy">
-        <div class="container">
-            <div class="bannerText">
 
-                <p>
-                    Reinventing commerce learning with innovative SL Tech and IL Tech.
-                    Benefitting students and college with career-focused courses
-                </p>
+        <div class="bannerText">
 
-            </div>
+            <p>
+                We are glad to start our interactive learning using SL Tech platform that will effectively bridge
+                the gap between theory
+                and practice.</p>
+
+            <P>G-TEC Nergy Vidya is a comprehensive statutory compliance program, encompassing e-PAN, GST, ITR,
+                TDS/TCS, EPFO/ESIC,
+                DSC, and more. Using Simulation Learning Technology, it empowers individuals to enhance their
+                statutory and regulatory
+                compliance skills, enabling them to navigate real-life professional challenges.</P>
+
+            <p>The SL Tech platform (Simulated Learning Technology platform) offers immersive learning through
+                cloud-based simulations.
+                This approach empowers learners to practice and hone their skills in environments that closely
+                mirror real-life
+                situations, all without real-world consequences.
+
+            </p>
 
         </div>
+        <p class="purchase">We are now ready to deliver the licenses for this platform. Course details and license
+            prices have been
+            listed herewith.
+            It is mandatory to purchase a license for all students who has taken admission for the courses below:
+        </p>
+        <a href="https://forms.gle/hKgttT4Y4ZrVdHE67" class="primaryBtn">PURCHASE</a>
+
     </section>
+
 
     <section class="streamlinedCourses" id="course-features">
         <div class="container">
@@ -1388,6 +1275,7 @@
                             life skill.
                         </p>
                     </div>
+
                 </a>
                 <a href="gst_executive.html" class="coursesitem">
 
