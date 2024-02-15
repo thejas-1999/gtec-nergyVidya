@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nergy Vidya</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/img/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/img/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="./main.css" />
+
+
+    <script>
+        !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod
+                    ? n.callMethod.apply(n, arguments)
+                    : n.queue.push(arguments);
+            };
+
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = "2.0";
+
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+
+            s.parentNode.insertBefore(t, s);
+        })(
+            window,
+            document,
+            "script",
+
+            "https://connect.facebook.net/en_US/fbevents.js"
+        );
+
+        fbq("init", "339404635200859");
+
+        fbq("track", "PageView");
+    </script>
+
+    <noscript><img height="1" width="1" style="display: none"
+            src="https://www.facebook.com/tr?id=339404635200859&ev=PageView&noscript=1" /></noscript>
+    <style>
+        @import "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap";
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input,
+        button,
+        input:focus,
+        button:focus {
+            outline: none;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1120px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        a,
+        button {
+            transition: all 0.3s ease;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        *.m-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section.pt-0,
+        *.pt-0 {
+            padding-top: 0;
+        }
+
+        .d-none-xs {
+            display: none;
+        }
+
+        @media (min-width: 769px) {
+            .d-none-xs {
+                display: block;
+            }
+        }
+
+        .s-block-sm {
+            display: block;
+        }
+
+        @media (min-width: 769px) {
+            .s-block-sm {
+                display: none;
+            }
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        @keyframes fade-in-anim {
+            100% {
+                width: 85px;
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translatey(0px);
+            }
+
+            50% {
+                transform: translatey(-20px);
+            }
+
+            100% {
+                transform: translatey(0px);
+            }
+        }
+
+        .leadersSlide {
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            max-width: 1220px;
+            padding-left: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .leadersSlide {
+                padding: 0;
+            }
+        }
+
+        .leadersSlide .owl-stage-outer {
+            position: relative;
+            z-index: 2;
+        }
+
+        .leadersSlide .owl-dots {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 118px;
+            bottom: 75px;
+            padding-left: 0;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .leadersSlide .owl-dots {
+                right: 16px;
+                bottom: 40px;
+                left: auto;
+                width: auto;
+            }
+        }
+
+        .leadersSlide .owl-dots:hover {
+            margin-left: -10px;
+        }
+
+        .leadersSlide .owl-dots:hover .owl-dot {
+            margin-left: -10px;
+        }
+
+        @media (max-width: 768px) {
+            .leadersSlide .owl-dots:hover .owl-dot {
+                margin-left: -20px;
+            }
+        }
+
+        .leadersSlide .owl-dots .owl-dot {
+            width: 50px;
+            height: 50px;
+            margin: 0;
+            margin-left: -20px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .leadersSlide .owl-dots .owl-dot:first-child {
+            background: url("../img/leaders/leader_tumb.png") no-repeat center center;
+            background-size: 100%;
+            z-index: 3;
+        }
+
+        .leadersSlide .owl-dots .owl-dot:nth-child(2) {
+            background: url("../img/leaders/leader_tumb_2.png") no-repeat center center;
+            background-size: 100%;
+            z-index: 4;
+        }
+
+        .leadersSlide .owl-dots .owl-dot:nth-child(3) {
+            background: url("../img/leaders/leader_tumb_3.png") no-repeat center center;
+            background-size: 100%;
+            z-index: 5;
+        }
+
+        .leadersSlide .owl-dots .owl-dot:nth-child(4) {
+            background: url("../img/leaders/leader_tumb.png") no-repeat center center;
+            background-size: 100%;
+            z-index: 6;
+        }
+
+        .leadersSlide .owl-dots .owl-dot:nth-child(5) {
+            background: url("../img/leaders/leader_tumb_2.png") no-repeat center center;
+            background-size: 100%;
+            z-index: 7;
+        }
+
+        .leadersSlide .owl-dots .owl-dot:nth-child(6) {
+            background: url("../img/leaders/leader_tumb_3.png") no-repeat center center;
+            background-size: 100%;
+            z-index: 8;
+        }
+
+        .leadersSlide .owl-dots .owl-dot.active {
+            z-index: 9;
+        }
+
+        .form-control {
+            margin-bottom: 24px;
+        }
+
+        .form-control .form-input {
+            width: 100%;
+            height: 56px;
+            padding: 16px;
+            border: solid 1px gray;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #fcc73b;
+            font-family: "DM Sans", sans-serif;
+            outline: 0;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control .form-input:focus {
+            border-color: #48a2da;
+        }
+
+        .form-control .form-textarea {
+            width: 100%;
+            height: 160px;
+            padding: 12px 16px;
+            border: solid 1px #e1edf5;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #fcc73b;
+            font-family: "DM Sans", sans-serif;
+            outline: 0;
+            resize: none;
+            font-family: "DM Sans", sans-serif;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control .form-textarea:focus {
+            border-color: #48a2da;
+        }
+
+        .form-control.invalid input,
+        .form-control.invalid input:focus {
+            border-color: #e68686;
+            color: #e68686;
+        }
+
+        .form-control.invalid .errorText {
+            font-size: 14px;
+            color: #e68686;
+            margin: 5px 0;
+        }
+
+        .submitBtn {
+            height: 56px;
+            width: 300px;
+            background: #2660ac;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-family: "DM Sans", sans-serif;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .submitBtn:hover {
+            background: #fcc73b;
+        }
+
+        @media (max-width: 768px) {
+            .submitBtn {
+                width: 150px;
+                height: 48px;
+            }
+        }
+
+        .primaryBtn {
+            height: 41px;
+            padding: 8px 24px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: #fff;
+            font-family: "DM Sans", sans-serif;
+            background: #2660ac;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .primaryBtn:hover {
+            background: #1d4982;
+        }
+
+        .secondaryBtn {
+            height: 41px;
+            padding: 8px 24px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: #fff;
+            font-family: "DM Sans", sans-serif;
+            background: #12b24b;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .secondaryBtn.largeBtn {
+            height: 61px;
+            font-size: 22px;
+            padding: 8px 36px;
+        }
+
+        .secondaryBtn:hover {
+            background: #0d8437;
+        }
+
+        .outlineBtn {
+            height: 41px;
+            padding: 8px 24px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: #48a2da;
+            font-family: "DM Sans", sans-serif;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            border: solid 1px #48a2da;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .outlineBtn.largeBtn {
+            height: 61px;
+            font-size: 22px;
+            padding: 8px 36px;
+        }
+
+        .outlineBtn:hover {
+            color: #fff;
+            background: #48a2da;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            padding: 15px 16px;
+            background: #fff;
+            z-index: 5;
+            transition: all 0.3s ease;
+        }
+
+        @media (min-width: 769px) {
+            header {
+                padding: 15px 0;
+            }
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header h1 a {
+            display: flex;
+            position: relative;
+        }
+
+        header h1 .logoSticky {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        header h1 img {
+            height: 46px;
+            transition: all 0.3s ease;
+        }
+
+        @media (min-width: 769px) {
+            header h1 img {
+                height: 65px;
+            }
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        header nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 33px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 1023px) {
+            header nav ul {
+                height: 0;
+                overflow: hidden;
+                padding: 0 16px 0 16px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 60px;
+                width: 100%;
+                background: #fff;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+                opacity: 0;
+                transition: all 0.3s ease;
+                box-shadow: 5px 1px 10px rgba(252, 199, 59, 0.1);
+            }
+
+            header nav ul li {
+                display: block;
+                width: 100%;
+            }
+
+            header nav ul li a {
+                display: block;
+            }
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #48a2da;
+            font-family: "DM Sans", sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        header nav a:hover {
+            color: #2660ac;
+            cursor: pointer;
+        }
+
+        header nav .active a {
+            font-weight: 700;
+            color: #2660ac;
+        }
+
+        @media (max-width: 1023px) {
+            header nav.active ul {
+                top: 65px;
+                height: auto;
+                padding: 15px 16px 15px 16px;
+                opacity: 1;
+                transform: translateY(10px);
+            }
+        }
+
+        header nav.active button span:first-child {
+            transform: rotate(45deg);
+        }
+
+        header nav.active button span:nth-child(2) {
+            opacity: 0;
+        }
+
+        header nav.active button span:last-child {
+            transform: rotate(-45deg);
+        }
+
+        header .mobileMenu {
+            display: none;
+        }
+
+        @media (max-width: 1023px) {
+            header .mobileMenu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 46px;
+                width: 100%;
+                width: 32px;
+                padding: 0;
+                border: 0;
+                background: rgba(0, 0, 0, 0);
+                cursor: pointer;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            header .mobileMenu span {
+                height: 4px;
+                width: 100%;
+                background: #2660ac;
+                display: block;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                transition: all 0.3s ease;
+            }
+
+            header .mobileMenu span:first-child {
+                transform-origin: 13% 150%;
+            }
+
+            header .mobileMenu span:last-child {
+                transform-origin: 22% 0;
+            }
+        }
+
+        header .login-button {
+            min-width: 95px;
+            height: 40px;
+            background: #12b24b;
+            padding: 8px 20px;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: inline-flex;
+            font-weight: 500;
+            text-transform: uppercase;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+        }
+
+        header .login-button:hover {
+            color: #fff;
+            background: #109b41;
+        }
+
+        @media (min-width: 769px) {
+            header.sticky {
+                padding: 12px 0;
+            }
+        }
+
+        header.sticky h1 img {
+            height: 45px;
+            opacity: 0;
+        }
+
+        header.sticky h1 img.logoSticky {
+            opacity: 1;
+        }
+
+        .banner {
+            padding: 20px 16px 90px;
+        }
+
+        @media (min-width: 769px) {
+            .banner {
+                padding: 20px 0 56px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .banner .primaryBtn {
+                margin: 0 auto;
+                max-width: 180px;
+                display: flex;
+            }
+        }
+
+        .banner .container {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (min-width: 769px) {
+            .banner .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .banner .container .bannerText {
+            max-width: 500px;
+        }
+
+        .banner .container .bannerText h1 {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 44px;
+            letter-spacing: 1.5px;
+            color: #2660ac;
+            font-family: "DM Sans", sans-serif;
+            margin: 0 0 15px 0;
+        }
+
+        .banner .container .bannerText h1 span {
+            color: #12b24b;
+        }
+
+        @media (min-width: 769px) {
+            .banner .container .bannerText h1 {
+                font-size: 48px;
+                line-height: 50px;
+                letter-spacing: 2.5px;
+                margin: 0 0 25px 0;
+            }
+        }
+
+        .banner .container .bannerText p {
+            max-width: 445px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #5e6062;
+            margin-bottom: 24px;
+        }
+
+        @media (min-width: 769px) {
+            .banner .container .bannerText p {
+                margin-bottom: 40px;
+            }
+        }
+
+        .banner .container figure {
+            width: 100%;
+            max-width: 100%;
+            max-height: 280px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            background: url("../img/banner_shape.svg") no-repeat center bottom;
+            background-size: contain;
+            margin-bottom: 25px;
+        }
+
+        @media (min-width: 769px) {
+            .banner .container figure {
+                max-width: 535px;
+                max-height: 505px;
+                margin-bottom: 0;
+            }
+        }
+
+        .banner .container figure .bannerImage {
+            max-height: 500px;
+            position: relative;
+            margin-bottom: -10px;
+            animation: float 6s ease-in-out infinite;
+            transition: all 0.2s ease;
+        }
+
+        @media (max-width: 768px) {
+            .banner .container figure .bannerImage {
+                height: 290px;
+                width: 225px;
+            }
+        }
+
+        .banner .container figure .bannerShape {
+            position: absolute;
+            left: 13px;
+            bottom: -10px;
+        }
+
+        .streamlinedCourses {
+            padding: 50px 16px 30px;
+            background: #2660ac;
+        }
+
+        .streamlinedCourses.innerCourses {
+            padding: 50px 16px 30px;
+            display: none;
+        }
+
+        @media (min-width: 769px) {
+            .streamlinedCourses {
+                padding: 85px 0;
+            }
+
+            .streamlinedCourses.innerCourses {
+                padding: 40px 0 40px;
+                display: block;
+            }
+        }
+
+        .streamlinedCourses h2 {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38px;
+            color: #fff;
+            letter-spacing: 0.5px;
+            font-family: "DM Sans", sans-serif;
+            margin: 0 auto 24px;
+            text-align: center;
+        }
+
+        @media (min-width: 769px) {
+            .streamlinedCourses h2 {
+                font-size: 42px;
+                line-height: 45.8px;
+                letter-spacing: 2px;
+                max-width: 700px;
+            }
+        }
+
+        .streamlinedCourses p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: #fff;
+            letter-spacing: 0.5px;
+            max-width: 700px;
+            text-align: center;
+            margin: 0 auto 24px auto;
+        }
+
+        .streamlinedCourses .coursesList {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            flex-wrap: wrap;
+        }
+
+        .streamlinedCourses .coursesList .coursesitem {
+            width: 100%;
+            max-width: 100%;
+            background: #fff;
+            margin-bottom: 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+        }
+
+        @media (min-width: 769px) {
+            .streamlinedCourses .coursesList .coursesitem {
+                max-width: 32.3%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .streamlinedCourses .coursesList .coursesitem {
+                max-width: 32%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .streamlinedCourses .coursesList .coursesitem {
+                max-width: 357px;
+            }
+        }
+
+        .streamlinedCourses .coursesList .coursesitem figure {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 162px;
+            background: #c1e8fb;
+            border-radius: 8px 8px 0 0;
+            -webkit-border-radius: 8px 8px 0 0;
+            -moz-border-radius: 8px 8px 0 0;
+        }
+
+        .streamlinedCourses .coursesList .coursesitem img {
+            max-width: 100%;
+        }
+
+        .streamlinedCourses .coursesList .coursesitem .courselabel {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.5;
+            color: #2e9bd6;
+        }
+
+        .streamlinedCourses .coursesList .coursesitem figcaption {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: #383b3e;
+            margin: 14px 0;
+        }
+
+        .streamlinedCourses .coursesList .coursesitem p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            color: #5e6062;
+            margin: 0;
+            text-align: left;
+            letter-spacing: 0px;
+        }
+
+        .streamlinedCourses .coursesListText {
+            width: calc(100% - 310px);
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .streamlinedCourses .coursesListText {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .streamlinedCourses .coursesListText {
+                width: calc(100% - 381px);
+            }
+        }
+
+        .streamlinedCourses .coursesListText h3 {
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 42px;
+            letter-spacing: 2px;
+            color: #fff;
+            max-width: 502px;
+            margin: 0 0 0 70px;
+        }
+
+        @media (max-width: 768px) {
+            .streamlinedCourses .coursesListText h3 {
+                font-size: 28px;
+                line-height: 32px;
+                letter-spacing: 0.5px;
+                margin: 0 20px 0 0;
+            }
+        }
+
+        .streamlinedCourses .contentWrap {
+            padding: 16px 24px 24px 24px;
+        }
+
+        .streamListCourses {
+            padding: 50px 16px 30px;
+            background: rgba(193, 232, 251, 0.25);
+        }
+
+        .streamListCourses h2 {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            color: #2660ac;
+            letter-spacing: 0.5px;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+
+        @media (min-width: 769px) {
+            .streamListCourses h2 {
+                font-size: 42px;
+                line-height: 45.8px;
+                letter-spacing: 2px;
+                margin: 0 auto 30px;
+                max-width: 630px;
+            }
+        }
+
+        .streamListCourses p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: #5e6062;
+            letter-spacing: 0.5px;
+            max-width: 625px;
+            text-align: center;
+            margin: 0 auto 30px auto;
+        }
+
+        .streamListCourses .coursesList {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            flex-wrap: wrap;
+            max-width: 830px;
+            margin: 0 auto;
+        }
+
+        .streamListCourses .coursesList .coursesitem {
+            width: 100%;
+            max-width: 100%;
+            background: #fff;
+            margin-bottom: 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+        }
+
+        @media (min-width: 769px) {
+            .streamListCourses .coursesList .coursesitem {
+                max-width: 32.3%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .streamListCourses .coursesList .coursesitem {
+                max-width: 32%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .streamListCourses .coursesList .coursesitem {
+                max-width: 400px;
+            }
+        }
+
+        .streamListCourses .coursesList .coursesitem figure {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 162px;
+            background: #48a2da;
+            border-radius: 8px 8px 0 0;
+            -webkit-border-radius: 8px 8px 0 0;
+            -moz-border-radius: 8px 8px 0 0;
+        }
+
+        .streamListCourses .coursesList .coursesitem img {
+            max-width: 100%;
+        }
+
+        .streamListCourses .coursesList .coursesitem .courselabel {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.5;
+            color: #2e9bd6;
+        }
+
+        .streamListCourses .coursesList .coursesitem figcaption {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: #383b3e;
+            margin: 14px 0;
+        }
+
+        .streamListCourses .coursesList .coursesitem p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            color: #5e6062;
+            margin: 0;
+            text-align: left;
+            letter-spacing: 0px;
+        }
+
+        .streamListCourses .coursesList .coursesitem .more {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #2660ac;
+            margin-top: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .streamListCourses .coursesList .coursesitem:hover .more {
+            gap: 10px;
+        }
+
+        .streamListCourses .coursesList .duration {
+            color: #5b5b5b;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 14px 0;
+        }
+
+        .streamListCourses .coursesListText {
+            width: calc(100% - 310px);
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .streamListCourses .coursesListText {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .streamListCourses .coursesListText {
+                width: calc(100% - 381px);
+            }
+        }
+
+        .streamListCourses .coursesListText h3 {
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 42px;
+            letter-spacing: 2px;
+            color: #fff;
+            max-width: 502px;
+            margin: 0 0 0 70px;
+        }
+
+        @media (max-width: 768px) {
+            .streamListCourses .coursesListText h3 {
+                font-size: 28px;
+                line-height: 32px;
+                letter-spacing: 0.5px;
+                margin: 0 20px 0 0;
+            }
+        }
+
+        .streamListCourses .contentWrap {
+            padding: 16px 24px 24px 24px;
+        }
+
+        .courseFeatures {
+            padding: 50px 16px 30px;
+            background: url("../img/ourCourseFeatures.webp") no-repeat right 240px;
+            background-size: 315px;
+        }
+
+        @media (min-width: 769px) {
+            .courseFeatures {
+                padding: 110px 0 100px;
+                background: url("../img/ourCourseFeatures.webp") no-repeat right 110px;
+                background-size: 465px;
+            }
+        }
+
+        .courseFeatures .sectionLabel {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: #12b24b;
+            margin: 0 0 20px 0;
+        }
+
+        .courseFeatures h2 {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38px;
+            letter-spacing: 0.5px;
+            max-width: 630px;
+            color: #2660ac;
+            margin: 0 0 390px 0;
+        }
+
+        .courseFeatures h2 span {
+            color: #12b24b;
+        }
+
+        @media (min-width: 769px) {
+            .courseFeatures h2 {
+                font-size: 42px;
+                line-height: 50.8px;
+                letter-spacing: 2px;
+                margin: 0 0 64px 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .courseFeatures h2 br {
+                display: none;
+            }
+        }
+
+        .courseFeatures .featuresBlocks {
+            display: block;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            max-width: 750px;
+        }
+
+        @media (min-width: 769px) {
+            .courseFeatures .featuresBlocks {
+                display: flex;
+                gap: 30px;
+                margin-bottom: 48px;
+            }
+        }
+
+        .courseFeatures .featuresBlocks .blockItem {
+            width: 100%;
+        }
+
+        .courseFeatures .featuresBlocks .blockItem img {
+            display: block;
+            margin: 0 auto;
+            animation: float 6s ease-in-out infinite;
+            transition: all 0.2s ease;
+        }
+
+        .courseFeatures .featuresBlocks .blockItem:nth-child(2n) h3 {
+            max-width: 240px;
+        }
+
+        .courseFeatures .featuresBlocks h3 {
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: #383b3e;
+            margin: 0 0 15px 0;
+        }
+
+        @media (min-width: 769px) {
+            .courseFeatures .featuresBlocks h3 {
+                margin: 0 0 25px 0;
+            }
+        }
+
+        .courseFeatures .featuresBlocks p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #5e6062;
+        }
+
+        .courseFeatures .featuresBlocks:last-child {
+            max-width: 762px;
+        }
+
+        @media (min-width: 769px) {
+            .courseFeatures .featuresBlocks:last-child {
+                max-width: 762px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .courseFeatures .featuresBlocks:last-child {
+                margin: 0;
+            }
+        }
+
+        .courseFeatures .featuresBlocks:last-child .blockItem:first-child h3 {
+            max-width: 185px;
+        }
+
+        .courseFeatures .featuresBlocks:last-child .blockItem:last-child {
+            min-width: 100%;
+        }
+
+        @media (min-width: 769px) {
+            .courseFeatures .featuresBlocks:last-child .blockItem:last-child {
+                min-width: 380px;
+            }
+        }
+
+        .courseFeatures .featuresBlocks:last-child .blockItem:last-child h3 {
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            /* Adjust the max-width value to target smaller screen sizes */
+            .mobileMenu {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a href="index.html">
+                    <img src="https://lh3.googleusercontent.com/BmiFQM5IZKAH2vH4lINLBml_dYl6gCg4NrzX7FGouf75Xjc91_ATUQvKW7zkSNqirr_udvLHso4yFyxmOZn8Ego=w16383"
+                        alt="G-TEC logo" />
+                    <span style="margin-right: 10px;"></span>
+
+                    <img src="https://nergyvidya.com/assets/img/nergyvidya_logo2.svg" alt="nergy india logo" />
+                    <img src="./assets/img/nergyvidya_logo2.svg" class="logoSticky" alt="nergy india logo" />
+                </a>
+            </h1>
+            <nav>
+                <button class="mobileMenu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul>
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!-- <li>
+            <a href="about.html">About Us</a>
+          </li> -->
+                    <li>
+                        <a href="#course-features">Courses</a>
+                    </li>
+                    <!-- <li>
+            <a href="technology.html">Technology</a>
+          </li> -->
+                    <!-- <li>
+            <a href="partner_associates.html">Partner & Associates</a>
+          </li>
+          <li>
+            <a href="faq.html">FAQ</a>
+          </li> -->
+                    <li>
+                        <a href="https://gtec.nergyvidya.com/" target="_blank" class="login-button">Log In</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="banner animateNergy">
+        <div class="container">
+            <div class="bannerText">
+
+                <p>
+                    Reinventing commerce learning with innovative SL Tech and IL Tech.
+                    Benefitting students and college with career-focused courses
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="streamlinedCourses" id="course-features">
+        <div class="container">
+            <h2>Streamlined commerce learning through technology integration</h2>
+            <p>
+                Our courses are thoughtfully crafted to maximize outcomes, emphasizing
+                practical applications, and powered by innovative SL and IL Tech. This
+                design not only enhances learners' skills but also broadens their
+                opportunities in career development.
+            </p>
+            <div class="coursesList">
+                <a href="personal_finance.html" class="coursesitem">
+
+                    <div class="contentWrap">
+                        <div class="courselabel">Course</div>
+                        <figcaption>Personal Finance</figcaption>
+                        <p>
+                            This is a course made for everyone who wants to attain financial
+                            literacy. Designed under the belief that financial literacy is a
+                            life skill.
+                        </p>
+                    </div>
+                </a>
+                <a href="gst_executive.html" class="coursesitem">
+
+                    <div class="contentWrap">
+                        <div class="courselabel">Course</div>
+                        <figcaption>GST Executive</figcaption>
+                        <p>
+                            Master the art of GST registration, filings, and e-way bill
+                            generation with our hands-on course, gaining valuable expertise.
+                        </p>
+                    </div>
+                </a>
+                <a href="statutory_executive.html" class="coursesitem">
+
+                    <div class="contentWrap">
+                        <div class="courselabel">Course</div>
+                        <figcaption>Statutory Executive</figcaption>
+                        <p>
+                            The Statutory Executive course features hands-on statutory
+                            e-Filing in a simulated environment. Master e-PAN generation,
+                            ITR filing and registrations, GST, TDS/TCS computations, digital
+                            signature certificate and EPFO/ESIC
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+
+            <script src="./assets/js/jquery.min.js"></script>
+            <script src="./assets/js/common.js"></script>
+            <script src="./assets/js/owl.carousel.js"></script>
+            <script src="./assets/js/home.js"></script>
+</body>
+
+</html>
